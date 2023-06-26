@@ -1,3 +1,6 @@
+#SwiftUI UI Reference Sample
+
+This GitHub repository provides a collection of SwiftUI-based UI reference samples for iOS and macOS applications. These samples serve as a valuable resource for developers looking to explore and learn about SwiftUI's powerful declarative user interface framework.
 
 ## Features
 
@@ -5,7 +8,7 @@
 -   Well-documented code with clear explanations and annotations, making it easy to understand and adapt.
 -   Examples covering common UI patterns, such as navigation, forms, lists, and more.
 -   Customizable and interactive demos to experiment with different configurations and visual styles.
--   Compatibility with both iOS and macOS platforms, enabling developers to build UIs for multiple Apple devices.
+-   Compatibility with iOS platforms, enabling developers to build UIs for multiple Apple devices.
 
 ## Installation
 
