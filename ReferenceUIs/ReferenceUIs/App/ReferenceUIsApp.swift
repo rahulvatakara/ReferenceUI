@@ -11,7 +11,7 @@ import SwiftUI
 struct ReferenceUIsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FeedbackView()
         }
     }
 }
