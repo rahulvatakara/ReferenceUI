@@ -1,4 +1,4 @@
-#SwiftUI UI Reference Sample
+# SwiftUI UI Reference Sample
 
 This GitHub repository provides a collection of SwiftUI-based UI reference samples for iOS and macOS applications. These samples serve as a valuable resource for developers looking to explore and learn about SwiftUI's powerful declarative user interface framework.
 
