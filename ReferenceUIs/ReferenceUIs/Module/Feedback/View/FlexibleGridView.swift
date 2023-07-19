@@ -30,26 +30,25 @@ struct FlexibleGridView<Data: Collection, Content: View>: View where Data.Elemen
             }
         }
     }
-    
+
     func computeRows() -> [[Data.Element]] {
         var rows: [[Data.Element]] = [[]]
         var currentRow = 0
         var remainingWidth = availableWidth
-        
-        for element in data {
-            let elementSize = elementsSize[element, default: CGSize(width: availableWidth, height: 1)]
-            
-            if remainingWidth - (elementSize.width + spacing) >= 0 {
-                rows[currentRow].append(element)
+        for item in data {
+            let size = elementsSize[item, default: CGSize(width: availableWidth - 1, height: 1)]
+            if (remainingWidth - size.width - spacing) > 0 {
+                print("\(currentRow), \(remainingWidth) \(size.width)")
+                rows[currentRow].append(item)
             } else {
-                currentRow = currentRow + 1
-                rows.append([element])
+                print(":::\(currentRow)")
+                currentRow += 1
+                rows.append([item])
                 remainingWidth = availableWidth
             }
-            
-            remainingWidth = remainingWidth - (elementSize.width + spacing)
+            remainingWidth = remainingWidth - spacing - size.width
         }
-        
+        print(rows)
         return rows
     }
 }
@@ -60,8 +59,8 @@ struct FlexibleGridView_Previews: PreviewProvider {
         GeometryReader { geometryProxy in
             FlexibleGridView(
                          availableWidth: geometryProxy.size.width, data: keywords,
-                         spacing: 15,
-                         alignment: .leading
+                         spacing: 0,
+                         alignment: .center
                        ) { item in
                          Text(item)
                            .padding(8)
@@ -71,6 +70,6 @@ struct FlexibleGridView_Previews: PreviewProvider {
                             )
                        }
                        .padding(.horizontal, 10)
-        }.background(Color.yellow)
+        }.background(Color.white)
          }
     }

@@ -17,6 +17,9 @@
 		9A3D191E2A45C081007B2D35 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D191D2A45C081007B2D35 /* RecommendView.swift */; };
 		9A3D19222A46FC38007B2D35 /* FlexibleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D19212A46FC38007B2D35 /* FlexibleGridView.swift */; };
 		9A3D19242A46FCC5007B2D35 /* SizeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D19232A46FCC5007B2D35 /* SizeReader.swift */; };
+		9A3D19282A49CEE0007B2D35 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D19272A49CEE0007B2D35 /* ActionButton.swift */; };
+		9AADC5A62A4B62B300C98281 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADC5A52A4B62B300C98281 /* Test.swift */; };
+		9AADC5A82A4F189E00C98281 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADC5A72A4F189E00C98281 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		9A3D191D2A45C081007B2D35 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		9A3D19212A46FC38007B2D35 /* FlexibleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleGridView.swift; sourceTree = "<group>"; };
 		9A3D19232A46FCC5007B2D35 /* SizeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeReader.swift; sourceTree = "<group>"; };
+		9A3D19272A49CEE0007B2D35 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		9AADC5A52A4B62B300C98281 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		9AADC5A72A4F189E00C98281 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		9A3D19102A44EEFE007B2D35 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				9A3D19252A49CEAD007B2D35 /* Login */,
 				9A3D19142A44EF59007B2D35 /* Feedback */,
 			);
 			path = Module;
@@ -145,6 +152,24 @@
 				9A3D191D2A45C081007B2D35 /* RecommendView.swift */,
 				9A3D19212A46FC38007B2D35 /* FlexibleGridView.swift */,
 				9A3D19232A46FCC5007B2D35 /* SizeReader.swift */,
+				9AADC5A52A4B62B300C98281 /* Test.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A3D19252A49CEAD007B2D35 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9A3D19262A49CEB9007B2D35 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9A3D19262A49CEB9007B2D35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A3D19272A49CEE0007B2D35 /* ActionButton.swift */,
+				9AADC5A72A4F189E00C98281 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,7 +249,10 @@
 				9A3D19012A449215007B2D35 /* ReferenceUIsApp.swift in Sources */,
 				9A3D19182A44EF9D007B2D35 /* FeedbackView.swift in Sources */,
 				9A3D19222A46FC38007B2D35 /* FlexibleGridView.swift in Sources */,
+				9A3D19282A49CEE0007B2D35 /* ActionButton.swift in Sources */,
 				9A3D191C2A45AFC4007B2D35 /* RatingView.swift in Sources */,
+				9AADC5A62A4B62B300C98281 /* Test.swift in Sources */,
+				9AADC5A82A4F189E00C98281 /* LoginView.swift in Sources */,
 				9A3D191A2A44F102007B2D35 /* Constants.swift in Sources */,
 				9A3D19242A46FCC5007B2D35 /* SizeReader.swift in Sources */,
 			);
